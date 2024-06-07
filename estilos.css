@@ -288,21 +288,25 @@ body {
 .bienvenida .main-div2 div ul li a svg {
     width: 80%;
     height: 80%;
-    
+    color: white;
+
 }
 
-
-.bienvenida .main-div2 div ul li a svg {
+/* .bienvenida .main-div2 div ul li a svg {
     box-shadow: 0 0 10px #575755, 0 0 15px #575755, 0 0 20px #575755, 0 0 25px #575755, 0 0 35px #575755;
-}
+    
+} */
 
+p {
+    letter-spacing: 0.04em;
+}
 
 
 .bienvenida .main-div3 {
     grid-area: imagen;
     background: transparent;
     
-    min-width: 20vw;
+    min-width: 100%;
     min-height: 50vh;
     margin: 1px;
     padding: 1px;
@@ -310,8 +314,7 @@ body {
 }
 
 .bienvenida .main-div3 div {
-    margin: 1px;
-    padding: 1px;
+
     min-width: 100%;
     min-height: 100%;
     display: flex;
@@ -457,7 +460,7 @@ body {
         align-items: center;
         justify-content: center;
         width: 12.2rem;
-        margin-right: 9em;
+        margin-right: 3em;
         padding: 2vh 1vh 0vh 1vh;
         color: white;
         
@@ -490,10 +493,6 @@ body {
         width: 80%;
         height: 80%;
         
-    }
-    
-    .bienvenida .main-div2 div ul li a svg {
-        box-shadow: 0 0 10px #575755, 0 0 15px #575755, 0 0 20px #575755, 0 0 25px #575755, 0 0 35px #575755;
     }
     
     
@@ -532,8 +531,8 @@ body {
 
 .seccion-exp {
     width: 100%;
-    height: 55rem;
-    padding-top: 4rem;
+    height: 60rem;
+    padding-top: 7rem;
     margin-bottom: 0;
     background: linear-gradient(to top, #363b3f, #131616 );
     display: flex;
@@ -604,6 +603,7 @@ body {
     /** ==== SECCION EXPERIENCIA RESPONSIVE ==== */
 
     .seccion-exp {
+        padding-top: 15em;
         background: linear-gradient(to top, #363b3f 10%, #131616 90% );
     }
     
@@ -670,32 +670,32 @@ body {
 
 
 .div-proyectos div {
-    margin: .4rem;
-    margin-left: .1rem;
-    padding: .4rem;
+    margin: 0;
+    margin-left: 0;
+    
+    padding-left: 0;
     text-align: center;
     border: beige 1px solid;
     border-radius: 1rem;
 }
 
 .div-proyectos div img {
-    padding: .5em;
-    width: 100%;
-    min-height: 60%;
+
     
 }
 
-.div-proyectos div h2 {
-    font-size: 20px;
-    min-height: 20%;
+.div-proyectos div h3 {
+    font-size: 14px;
+    min-height: 10%;
     width: 100%;
-    
+    padding-top: 0;
 }
 
 .div-proyectos div p {
-    min-height: 20%;
+    min-height: 30%;
     width: 100%;
-    font-size: 15px;
+    font-size: 10px;
+    align-content: center;
 }
 
 @media (min-width: 768px) {
@@ -723,6 +723,37 @@ body {
         grid-auto-rows: 13em;
         gap: .4em;
         grid-auto-flow: dense;
+    }
+
+
+    
+    .div-proyectos div {
+        margin: .4rem;
+        margin-left: .1rem;
+        padding: .4rem;
+        text-align: center;
+        border: beige 1px solid;
+        border-radius: 1rem;
+    }
+
+    .div-proyectos div img {
+        padding: .2em;
+        min-width: 100%;
+        min-height: 60%;
+    }
+
+    .div-proyectos div h3 {
+        font-size: 20px;
+        min-height: 10%;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .div-proyectos div p {
+        min-height: 30%;
+        width: 100%;
+        font-size: 15px;
+        align-content: center;
     }
 
 }
@@ -765,26 +796,73 @@ body {
     
     
     .div-proyectos div {
-
         margin: .5rem;
+        margin-left: 0;
         padding: .4rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
         border: beige 1px solid;
         border-radius: 1rem;
     }
     
+
+    .div-proyectos div img {
+        padding: .2em;
+        min-width: 100%;
+        min-height: 7em;
+    }
+    
+    .div-proyectos div h3 {
+        font-size: 25px;
+        min-height: .5em;
+        width: 100%;
+        padding-top: 0;
+    }
+    
+    .div-proyectos div p {
+        min-height: 4em;
+        width: 100%;
+        font-size: 15px;
+        align-content: center;
+    }
     
 }
 
 
 @media (min-width: 1257px) {
+
+    #proyectos {
+        height: 60rem;
+    }
     
     .div-proyectos {
         grid-template-columns: repeat(2, 30em);
-        grid-auto-rows: 15em;
+        grid-auto-rows: 17em;
+    }
+
+    .div-proyectos div {
+        justify-content: end;
+    }
+
+    .div-proyectos div img {
+        padding: .2em;
+        min-width: 100%;
+        min-height: 60%;
+    }
+    
+    .div-proyectos div h3 {
+        font-size: 25px;
+        min-height: 10%;
+        width: 100%;
+        padding-top: 0;
+    }
+    
+    .div-proyectos div p {
+        min-height: 30%;
+        width: 100%;
+        font-size: 15px;
+        align-content: center;
     }
 }
 
@@ -835,6 +913,7 @@ body {
 }
 
 
+
 @media  (min-width: 768px ) {
 
     /** ==== SECCION STACK RESPONSIVE ==== */
@@ -881,9 +960,11 @@ body {
 
 
 @media (min-width: 1024px) {
+
     .stack {
-        height: 65rem;
-        justify-content: center;
+        padding-top: 7em;
+        height: 55rem;
+        justify-content: start;
     }
     
     .stack h1 {
@@ -898,7 +979,6 @@ body {
         font-size: 3.5rem;
         margin: .5rem;
         padding: .5rem;
-    
     }
 }
 
@@ -915,9 +995,9 @@ body {
 /* ==== SECCION FOOTER ==== */
 
 #footer {
-    background: linear-gradient(to left, #363b3f , #131616 , #363b3f );
+    background: #131616;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -931,7 +1011,6 @@ body {
     list-style-type: none;
     align-items: center;
     justify-content: center;
-    
 }
 
 #footer ul li {
@@ -941,20 +1020,14 @@ body {
 }
 
 
-@media  (max-width: 600px ) {
+@media  (min-width: 768px ) {
 
     /** ==== SECCION FOOTER RESPONSIVE ==== */
     /** ==== SECCION FOOTER RESPONSIVE ==== */
     /** ==== SECCION FOOTER RESPONSIVE ==== */
 
     #footer {
-        background: #131616;
-        width: 100%;
-        height: 15rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        height: 24rem;
     }
     
     #footer ul {
@@ -964,12 +1037,11 @@ body {
         list-style-type: none;
         align-items: center;
         justify-content: center;
-        
     }
     
     #footer ul li {
         margin: .5rem;
         padding: .5rem;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
 }
