@@ -680,8 +680,13 @@ p {
 }
 
 .div-proyectos div img {
-
-    
+    padding: .2em;
+    padding-bottom: 0;
+    min-width: 80%;
+    width: 80%;
+    min-height: 60%;
+    height: 60%;
+    border-radius: 1em;
 }
 
 .div-proyectos div h3 {
@@ -720,7 +725,7 @@ p {
         padding: 1rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, 28em);
-        grid-auto-rows: 13em;
+        grid-auto-rows: 20em;
         gap: .4em;
         grid-auto-flow: dense;
     }
@@ -737,7 +742,7 @@ p {
     }
 
     .div-proyectos div img {
-        padding: .2em;
+        padding: .2em .2em 0em 0em;
         min-width: 100%;
         min-height: 60%;
     }
@@ -789,7 +794,7 @@ p {
         padding: .5rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, 20em);
-        grid-auto-rows: 15em;
+        grid-auto-rows: 20em;
         gap: 1em;
         grid-auto-flow: dense;
     }
@@ -809,6 +814,7 @@ p {
 
     .div-proyectos div img {
         padding: .2em;
+        padding-left: 0;
         min-width: 100%;
         min-height: 7em;
     }
@@ -838,7 +844,7 @@ p {
     
     .div-proyectos {
         grid-template-columns: repeat(2, 30em);
-        grid-auto-rows: 17em;
+        grid-auto-rows: 20em;
     }
 
     .div-proyectos div {
@@ -863,6 +869,10 @@ p {
         width: 100%;
         font-size: 15px;
         align-content: center;
+    }
+
+    .div-proyectos div img {
+        padding-left: 0;
     }
 }
 
