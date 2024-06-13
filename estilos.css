@@ -2,6 +2,7 @@
     margin: 0 auto;
     color: beige;
     font-family: 'Courier New', Courier, monospace;
+
 }
 
 * > a {
@@ -9,9 +10,11 @@
     text-decoration: none;
 }
 
-body {
-    /* background: linear-gradient(to left, #363b3f , #131616 , #363b3f ); */
-    background: whi;
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -19,7 +22,8 @@ body {
 .header-navbar {
     background: linear-gradient(to top, #363b3f 10%, #131616  90%);
     height: 35vh;
-    width: 100%;
+    
+    min-width: 100%;
     color: antiquewhite;
 }
 
@@ -109,6 +113,12 @@ body {
 }
 
 @media  (min-width: 1024px ) {
+
+    .header-navbar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 
     #navBar {
         padding-right: 2vh;
@@ -292,10 +302,6 @@ body {
 
 }
 
-/* .bienvenida .main-div2 div ul li a svg {
-    box-shadow: 0 0 10px #575755, 0 0 15px #575755, 0 0 20px #575755, 0 0 25px #575755, 0 0 35px #575755;
-    
-} */
 
 p {
     letter-spacing: 0.04em;
@@ -331,6 +337,91 @@ p {
     min-height: 70px;
 }
 
+@media  (min-width: 768px ) {
+    
+    .bienvenida .main-div2 {
+        grid-area: texto;
+        min-height: 100%;
+        height: auto;
+        max-width: 100%;
+        min-width: 100px;
+        margin: auto;
+        padding: .8rem .8rem 0rem .8rem;
+        
+        background: transparent;
+    }
+    
+    .bienvenida .main-div2 div {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bienvenida .main-div2 div div {
+        margin: 0;
+        padding: 0;
+        height: 30em;
+        border: bisque 1px solid;
+        border-radius: 1rem;
+        background: linear-gradient(to left, #131616 , #363b3f , #474d50 );
+    }
+    
+    .bienvenida .main-div2 p {
+        font-size: 20px;
+        margin: 1vh;
+        padding: 1rem;
+        text-wrap: balance;
+        text-align: center;
+    }
+    
+    
+    .bienvenida .main-div2 ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        padding: 4rem 1rem 2rem 1rem;
+        color: white;
+        gap: 2rem;
+    }
+    
+    .bienvenida .main-div2 li {
+        height: 1rem;
+        width: 2rem;
+        padding: 1px;
+        margin: 1px;
+        font-size: 2.5rem;
+    }
+    
+    .bienvenida .main-div2 a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .bienvenida .main-div2 div ul li {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding: 3px;
+        padding-top: 4px;
+        
+    }
+    
+    .bienvenida .main-div2 div ul li a,
+    .bienvenida .main-div2 div ul li a svg {
+        width: 80%;
+        height: 80%;
+        color: white;
+    
+    }
+}
 
 @media  (min-width: 1024px ) {
 
@@ -570,7 +661,6 @@ p {
     padding-inline: 1rem;
     margin-inline: 1rem;
     font-size: .85rem;
-    
 }
 
 @media (min-width: 768px) {
@@ -657,8 +747,7 @@ p {
 
 .div-proyectos {
     height: auto;
-    border: beige 1px solid;
-    border-radius: 1rem;
+    
     display: grid;
     grid-template-columns: repeat(auto-fill, 18em);
     grid-auto-rows: 12em;
@@ -675,8 +764,7 @@ p {
     
     padding-left: 0;
     text-align: center;
-    border: beige 1px solid;
-    border-radius: 1rem;
+    
 }
 
 .div-proyectos div img {
@@ -720,8 +808,7 @@ p {
         height: auto;
         background: transparent;
         width: 80%;
-        border: beige 1px solid;
-        border-radius: 1rem;
+        
         padding: 1rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, 28em);
@@ -737,8 +824,7 @@ p {
         margin-left: .1rem;
         padding: .4rem;
         text-align: center;
-        border: beige 1px solid;
-        border-radius: 1rem;
+        
     }
 
     .div-proyectos div img {
@@ -789,8 +875,7 @@ p {
         background: transparent;
         width: 80%;
         height: auto;
-        border: beige 1px solid;
-        border-radius: 1rem;
+        
         padding: .5rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, 20em);
@@ -807,8 +892,7 @@ p {
         display: flex;
         flex-direction: column;
         align-items: start;
-        border: beige 1px solid;
-        border-radius: 1rem;
+       
     }
     
 
