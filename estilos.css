@@ -2,7 +2,7 @@
     margin: 0 auto;
     color: beige;
     font-family: 'Courier New', Courier, monospace;
-
+    
 }
 
 * > a {
@@ -22,7 +22,7 @@ html, body {
 .header-navbar {
     background: linear-gradient(to top, #363b3f 10%, #131616  90%);
     height: 35vh;
-    
+    border: none;
     min-width: 100%;
     color: antiquewhite;
 }
