@@ -206,9 +206,10 @@ html, body {
 .bienvenida .main-div1 div p {
     margin: 0;
     height: 80%;
-    min-width: 100%;
+    min-width: 80%;
     padding: .5em;
     justify-content: center;
+    align-items: center;
     text-align: center;
     text-wrap: balance;
     font-weight: bold;
@@ -338,7 +339,8 @@ p {
 }
 
 @media  (min-width: 768px ) {
-    
+
+
     .bienvenida .main-div2 {
         grid-area: texto;
         min-height: 100%;
