@@ -300,9 +300,12 @@ html, body {
     width: 80%;
     height: 80%;
     color: white;
-
+    transition: 0.5s;
 }
 
+.bienvenida .main-div2 div ul li a svg:hover {
+    filter: drop-shadow(1px 1px 12px white);
+}
 
 p {
     letter-spacing: 0.04em;
@@ -1006,9 +1009,69 @@ p {
     font-size: 1.85em;
     margin: .5rem;
     padding: .5rem;
+    border-radius: 20px;
+    transition: 0.2s;
 }
 
+#html:hover {
+    filter: drop-shadow(1px 1px 18px orangered);
+}
 
+#css:hover {
+    filter: drop-shadow(1px 1px 18px royalblue);
+}
+
+#javascript:hover {
+    filter: drop-shadow(1px 1px 18px yellow)
+}
+
+#bootstrap:hover {
+    filter: drop-shadow(1px 1px 18px blueviolet)
+}
+
+#node:hover {
+    filter: drop-shadow(2px 2px 20px rgba(0, 255, 0, 1))
+}
+
+#express:hover {
+    filter: drop-shadow(2px 2px 20px rgba(248, 248, 248, 1))
+}
+
+#git:hover {
+    filter: drop-shadow(1px 1px 18px orangered);
+}
+
+#vscode:hover {
+    filter: drop-shadow(1px 1px 18px royalblue);
+}
+
+#SQL:hover {
+    filter: drop-shadow(1px 1px 18px yellow);
+}
+
+#MySQL:hover {
+    filter: drop-shadow(1px 1px 18px white);
+}
+
+#mongodb:hover {
+    filter: drop-shadow(2px 2px 20px rgba(0, 255, 0, 1))
+}
+
+#docker:hover {
+    filter: drop-shadow(1px 1px 20px royalblue);
+}
+
+#python:hover {
+    filter: drop-shadow(1px 1px 20px royalblue);
+}
+
+#django:hover {
+    filter: drop-shadow(2px 2px 20px rgb(0, 255, 89))
+}
+
+#react:hover {
+    filter: drop-shadow(2px 2px 20px rgb(0, 174, 255))
+}
 
 @media  (min-width: 768px ) {
 
@@ -1115,6 +1178,14 @@ p {
     font-size: 1.5rem;
 }
 
+#footer ul li a svg {
+    transition: 0.2s;
+    
+}
+
+#footer ul li a svg:hover {
+    filter: drop-shadow(1px 1px 20px white);
+}
 
 @media  (min-width: 768px ) {
 
